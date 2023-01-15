@@ -1,5 +1,10 @@
 /* header style */
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .header{
   background: rgba(255, 144, 14, 0.1);
 }
@@ -10,8 +15,7 @@ nav{
     justify-content: space-between;
     margin: 35px 60px;
 }
-
-
+ 
 nav li{
     list-style: none;
     margin-left: 50px;
@@ -149,9 +153,11 @@ nav ul{
     }
 
       .fact-info{
+        padding: 20px;
         align-items: center;
         width: 500px;
         height: 70;
+        margin-bottom: 10px;
         margin-left: 70px;
       }
       .skill-container{
@@ -175,6 +181,12 @@ nav ul{
     }
     .skill:hover{
       width: 400px;
+    }
+
+    .skill-image{
+      display: block;
+      margin: 0 auto;
+      
     }
 
     .sponsor {
@@ -242,46 +254,55 @@ nav ul{
     @media only screen and (max-width:576px) {
 
       .header{
+        position: relative;
+        padding-top: 20px;
+        padding-left: 60px;
       display: grid;
       grid-template-columns: repeat(1,1fr);
       grid-column-gap: 10px;
       }
       nav,ul {
+        position: relative;
+        padding-bottom: 20px;
           flex-direction: column;
           margin: 0 auto;
           
   
       }
+      .nav-title{
+        margin-left: 10px;
+      }
+
+      .banner-title,banner-description{
+        padding-bottom: 20px;
+      }
+    .btn-primary{
+      margin-top: 15px;
+    }
 
       .banner{
-        margin-left: 5px;
+        position: relative;
+        margin-left: 45px;
+        margin-bottom: 10px;
         width: 150px;
         text-align: center;
+        /* margin-right: 400px; */
         padding-left: 20px;
         }
+        
         .banner-image{
-          margin-left: 8px;
+          position: relative;
+          margin-left: 50px;
           padding-left: 20px;
           width: 150px;
         }
-      nav,h2{
-        
-        text-align: center;
-        margin-left: 10px;
-      }
+
 
       .person{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         margin-left: 0;
         margin-right: 0px;
-       
-      }
-      .images-flex{
-        flex-direction: column;
-        margin-left: 10px;
-        margin-right: 220px;
-       width: 20%;
        
       }
 
@@ -291,17 +312,33 @@ nav ul{
           grid-column-gap: 10px;
           justify-items: center;
           }
+
+      .images-flex{
+        position: relative;
+        margin-left: 30px;
+        flex-direction: column;
+        /* margin-left: 10px;
+        margin-right: 220px; */
+       width: 20%;
+       
+      }
+
+      
             
           .main-info{
-            margin-left: 10px;
-        margin-right: 220px;
+            /* margin-left: 10px;
+        margin-right: 220px; */
+        /* position: relative; */
+        margin-left: 100px;
+        /* margin-right: 100px; */
        width: 40%;
           }
 
           .architect-feature{
+            position: relative;
             flex-direction: column;
-            align-items: center;
-        margin-right: 300px;
+            margin-left: 90px;
+        /* margin-right: 60px; */
             
           }
           .feature{
@@ -323,9 +360,11 @@ nav ul{
           }
 
           .button-on{
+            position: relative;
+            margin-left: 40px;
             width: 160px;
             height: 200px;
-            margin-left: 20px;
+            /* margin-left: 20px; */
           }
           
           
@@ -355,18 +394,20 @@ nav ul{
           }
 
           .fact-info{
-            margin-top: 50px;
+            position: relative;
+            /* margin-top: 90px; */
             width: 180px;
             height: 140px;
-           margin-left: 25px;
-            margin-bottom: 20px;
+           margin-left: 140px;
+            /* margin-bottom: 20px; */
 
           }
           
           .skill-container{
+            position: relative;
             flex-direction: column;
-            align-items: center;
-            margin-right: 140px;
+            /* align-items: center; */
+            margin-left: 150px;
 
           }
 
@@ -377,8 +418,9 @@ nav ul{
             
           }
           .bonus-section{
-            
-            flex-direction: column;
+            position: relative;
+            margin-left: 140px;
+             flex-direction: column;
             
           }
           .bonus-section-info{
@@ -386,7 +428,7 @@ nav ul{
             width: 140px;
             height: 250px;
             padding: 5px;
-            margin-bottom: 40px;
+            /* margin-bottom: 10px; */
           
           } 
 
@@ -397,11 +439,14 @@ nav ul{
             align-items: center;
             } 
             .sponsor{
+              /* position: relative; */
+              margin-left: 140px;
               width: 180px;
-              margin: 5px;
               height: 250px;
             }
             .sponsor-container{
+              position: relative;
+              margin-left: 140px;
               flex-direction: column;
               padding: 0;
             }
@@ -414,10 +459,10 @@ nav ul{
             }
 
             .foot{
-              margin-left: 5px;
+              margin: 10px;
               margin-bottom: 5px;
-              margin-right: 5px;
-              width: 160px;
+              /* margin-right: 5px; */
+              width: 400px;
               height: 70px;
             }
   
