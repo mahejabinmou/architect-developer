@@ -158,8 +158,11 @@ nav ul{
         display: flex;
         justify-content: space-around;
         gap: 24px;
+
+        }
+
+        
        
-    }
     .skill{
 
       width: 120px;
@@ -168,6 +171,10 @@ nav ul{
       border-radius: 5px;
        box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
         padding: 40px;
+        transition: width 10s;
+    }
+    .skill:hover{
+      width: 400px;
     }
 
     .sponsor {
@@ -242,6 +249,7 @@ nav ul{
       nav,ul {
           flex-direction: column;
           margin: 0 auto;
+          
   
       }
 
@@ -303,7 +311,6 @@ nav ul{
             
           }
           .features-title{
-            /* border: 10px solid #FF900E; */
             width: 140px;
             height: 90px;
             
