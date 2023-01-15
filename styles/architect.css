@@ -1,0 +1,358 @@
+/* header style */
+
+.header{
+  background: rgba(255, 144, 14, 0.1);
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 60px;
+}
+
+
+nav li{
+    list-style: none;
+    margin-left: 50px;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+/* banner */
+.banner {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  .btn-primary{
+    background: #FF900E;
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+  }
+  .banner-image{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ 
+      
+  }
+
+  /* main */
+
+  .images-flex{
+    display: flex;
+    margin-left: 150px;
+    }
+
+    .main-info{
+      margin: auto;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 50px;
+    
+    }
+    span{
+      color: #FF900E;
+    }
+
+    .main-flex{
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+      
+    }
+    .feature{
+      margin-bottom: 10px;
+      margin-left: 60px;
+      align-items: center;
+      width: 500px;
+      height: 120px;
+      border-radius: 5px;
+       box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+       padding-top: 5px;
+       padding-bottom: 20px;
+        padding-left: 20px;
+      }
+      .features-title{
+        margin-left: 60px;
+        align-items: center;
+        width: 500px;
+        height: 30px;
+      }
+
+      .features-description{
+        margin-left: 60px;
+        align-items: center;
+        width: 500px;
+      height: 70px;
+      }
+
+    .architect-feature{
+      margin-top: 100px;
+       margin-left: 30px;
+       margin-right: 50px;
+       display: flex;
+       gap: 20px;
+     }
+      .architect-image{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 85%;
+      }
+      .bonus-button{
+        font-style: bold;
+        position: absolute;
+        background: #FF900E;
+    border: 0;
+    border-radius: 5px;
+    width: 190px;
+    height: 110px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+      }
+      .ten{
+        font-size: 40px;
+        
+      }
+
+      .experience{
+        
+        font-size: 10px;
+      }
+
+      .bonus-button-div{
+        position: relative;
+        bottom: -.00001px;
+        right: -60px;
+        top: -80px;
+        
+      }
+
+      .fact-info{
+        align-items: center;
+        width: 500px;
+        height: 70;
+        margin-left: 70px;
+      }
+      .skill-container{
+        display: flex;
+        justify-content: space-around;
+        gap: 24px;
+       
+    }
+    .skill{
+
+      width: 120px;
+      height: 140px;
+      border: 1px solid #FF900E;
+      border-radius: 5px;
+       box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+        padding: 40px;
+    }
+
+    .sponsor {
+      margin: auto;
+      width: 500px;
+      text-align: center;
+    }
+    .sponsor-title{
+      font-size: 25px;
+    }
+
+    .sponsor-container{
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+    }
+
+    .foot{
+      border: 0;
+      border-radius: 8px;
+      margin-top: 60px;
+      margin-left: 80px;
+      margin-right: 100px;
+      text-align: center;
+      padding-top: 10px;
+      width: 1100px;
+      height: 35px;
+      background: #FFF4E7;
+    }
+
+
+    /* bonus-section */
+
+    .bonus-section{
+      margin-top: 100px;
+      margin-bottom: 50px;
+       margin-left: 30px;
+       margin-right: 50px;
+       display: flex;
+       gap: 20px;
+    }
+
+    .bonus-image{
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 100%;
+
+    }
+    .bonus-section-info{
+        margin-left: 60px;
+        align-items: center;
+        width: 500px;
+      height: 70px;
+    }
+
+
+   /*------------ media query-------- */
+   
+    @media only screen and (max-width:576px) {
+
+      .header{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-column-gap: 10px;
+      }
+      nav,ul {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 5px;
+  
+      }
+      nav,h2{
+        
+        text-align: center;
+        margin-left: 30px;
+      }
+      .images-flex{
+        flex-direction: column;
+        margin-left: 10px;
+      }
+
+      .main-flex{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-column-gap: 10px;
+          justify-items: center;
+          }
+          .person{
+            width: 120px;
+            height: 120px;
+            
+          }
+          .main-info{
+            margin-left: 70px;
+          }
+
+          .architect-feature{
+            flex-direction: column;
+            
+          }
+          .feature{
+            width: 200px;
+            height: 200px;
+            
+          }
+          .features-description{
+            width: 200px;
+            height: 120px;
+            padding: 10px;
+          }
+          .features-title{
+            /* border: 10px solid #FF900E; */
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+          }
+          
+
+      .bonus-button{
+
+        width: 100px;
+        height: 60px;
+        
+          }
+
+          .ten{
+            font-size: 20px;
+            
+          }
+    
+          .experience{
+            
+            font-size: 8px;
+          }
+          .bonus-button-div{
+            position: relative;
+            bottom: -.00001px;
+            right: -20px;
+            top: -40px;
+            
+          }
+
+          .fact-info{
+            margin-top: 50px;
+            width: 250px;
+            height: 120px;
+            padding: 10px;
+            margin-bottom: 30px;
+
+          }
+          .skill-container{
+            flex-direction: column;
+            align-items: center;
+          }
+          .bonus-section{
+            flex-direction: column;
+          }
+          .bonus-section-info{
+            width: 200px;
+            height: 170px;
+            padding: 10px;
+            margin-bottom: 40px;
+          
+          }
+
+          .bonus-image{
+            margin-left: 30px;
+            align-items: center;
+            }
+            .sponsor{
+              width: 250px;
+            }
+            .sponsor-container{
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .website{
+              margin: 5px;
+              padding: 5px;
+            }
+
+            .foot{
+              margin-left: 5px;
+              margin-bottom: 5px;
+              margin-right: 5px;
+              width: 350px;
+              height: 50px;
+            }
+  
+          }
+    
